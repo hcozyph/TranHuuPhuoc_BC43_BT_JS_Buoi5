@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bài tập JS buổi 5</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+
+        <!-- googleFont -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- fontAwesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+            integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+            crossorigin="anonymous"
+        />
+
+        <!-- index.css -->
+        <link rel="stylesheet" href="./CSS/index.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1 class="text-center">BÀI TẬP JS BUỔI 5</h1>
+            </div>
+
+            <div class="content d-block rounded-3">
+                <!--BT1: QUẢN LÝ TUYỂN SINH -->
+                <div>
+                    <h3 class="alert alert-primary fw-bold mb-0">
+                        Bài tập 1: Quản lý tuyển sinh
+                    </h3>
+                    <div
+                        class="form-group mt-4"
+                        style="padding-left: 10%; padding-right: 10%"
+                    >
+                        <div class="text-center w-100 mt-2">
+                            <input
+                                id="benchmark"
+                                type="number"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Điểm chuẩn"
+                            />
+
+                            <select
+                                id="area"
+                                type="text"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Chọn khu vực"
+                            >
+                                <option value="#">Vui lòng chọn khu vực</option>
+                                <option value="0">
+                                    X -- không được ưu tiên
+                                </option>
+                                <option value="2">A</option>
+                                <option value="1">B</option>
+                                <option value="0.5">C</option>
+                            </select>
+
+                            <select
+                                id="object"
+                                type="text"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Chọn đối tượng"
+                            >
+                                <option value="#">
+                                    Vui lòng chọn đối tượng
+                                </option>
+                                <option value="0">
+                                    0 -- không được ưu tiên
+                                </option>
+                                <option value="2.5">1</option>
+                                <option value="1.5">2</option>
+                                <option value="1">3</option>
+                            </select>
+                        </div>
+
+                        <div class="text-center w-100">
+                            <input
+                                id="subject1"
+                                type="number"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Điểm môn thứ 1"
+                            />
+                            <input
+                                id="subject2"
+                                type="number"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Điểm môn thứ 2"
+                            />
+                            <input
+                                id="subject3"
+                                type="number"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Điểm môn thứ 3"
+                            />
+                        </div>
+
+                        <div class="form-inline w-100 mb-4">
+                            <div
+                                class="d-flex row-flex"
+                                style="padding-left: 10%; padding-right: 10%"
+                            >
+                                <button
+                                    id="bt1-btn"
+                                    class="btn btn-dark col-3 m-2 p-2 ms-5"
+                                    style="min-height: 45px"
+                                >
+                                    Kết quả
+                                </button>
+
+                                <div
+                                    id="bt1-result"
+                                    class="alert alert-secondary col-7 m-2 p-2"
+                                    style="min-height: 45px"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End-BT1: QUẢN LÝ TUYỂN SINH -->
+
+                <!-- BT2: TÍNH TIỀN ĐIỆN -->
+                <div>
+                    <h3 class="alert alert-primary fw-bold mb-0">
+                        Bài tập 2: Tính tiền điện
+                    </h3>
+
+                    <div class="row row-cols-2 w-50" style="margin: 0 auto">
+                        <div class="col pt-4 pe-2 m-0">
+                            <input
+                                id="bt2-name"
+                                type="text"
+                                class="form-control"
+                                placeholder="Nhập Họ & Tên"
+                            />
+                        </div>
+
+                        <div class="col pt-4 pe-2 m-0">
+                            <input
+                                id="bt2-kW"
+                                type="text"
+                                class="form-control"
+                                placeholder="Nhập số kW"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-2 w-50" style="margin: 0 auto">
+                        <div class="col pt-4 pe-2 m-0 mb-2">
+                            <button
+                                id="bt2-btn"
+                                class="btn btn-dark w-100"
+                                style="min-height: 45px"
+                            >
+                                Kết quả
+                            </button>
+                        </div>
+
+                        <div class="col pt-4 pe-2 m-0 mb-2">
+                            <div
+                                id="bt2-result"
+                                class="alert alert-secondary w-100"
+                                style="min-height: 45px"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End-BT2: TÍNH TIỀN ĐIỆN -->
+
+                <!-- BT3: TÍNH THUẾ THU NHẬP CÁ NHÂN -->
+                <div>
+                    <h3 class="alert alert-primary fw-bold mb-0">
+                        Bài tập 3: Tính thuế thu nhập cá nhân
+                    </h3>
+
+                    <div
+                        class="row row-cols-3 w-75 mt-4"
+                        style="margin: 0 auto"
+                    >
+                        <div class="col">
+                            <input
+                                id="bt3-name"
+                                type="text"
+                                class="form-control"
+                                placeholder="Nhập Họ & Tên"
+                            />
+                        </div>
+
+                        <div class="col position-relative">
+                            <input
+                                id="bt3-income"
+                                type="text"
+                                class="form-control"
+                                placeholder="Tổng thu nhập năm"
+                            />
+
+                            <select
+                                name="unit"
+                                id="bt3-unit"
+                                class="form-control w-25 position-absolute"
+                                style="top: 0; right: 12px; padding-left: 4px"
+                            >
+                                <option value="#">Đơn vị</option>
+                                <option value="1e+6">Triệu</option>
+                                <option value="1e+9">Tỷ</option>
+                            </select>
+
+                            <i
+                                class="fa fa-angle-down position-absolute"
+                                style="right: 6%; top: 38%; font-size: 16px"
+                            ></i>
+                        </div>
+
+                        <div class="col">
+                            <input
+                                id="bt3-people"
+                                type="text"
+                                class="form-control"
+                                placeholder="Số người phụ thuộc"
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        class="row row-cols-2 w-75 mt-4"
+                        style="margin: 0 auto"
+                    >
+                        <div class="col position-relative w-50">
+                            <button
+                                id="bt3-btn"
+                                class="btn btn-dark w-100 m-0 me-2 position-absolute"
+                                style="
+                                    min-height: 45px;
+                                    max-width: 260px;
+                                    top: 0;
+                                    right: 0%;
+                                "
+                            >
+                                Kết quả
+                            </button>
+                        </div>
+
+                        <div class="col w-50">
+                            <div
+                                id="bt3-result"
+                                class="alert alert-secondary w-75 ms-2 mb-4"
+                                style="min-height: 45px"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End-BT3: TÍNH THUẾ THU NHẬP CÁ NHÂN -->
+
+                <!-- BT4: TÍNH TIỀN CÁP -->
+                <div>
+                    <h3 class="alert alert-primary fw-bold mb-0">
+                        Bài tập 4: Tính tiền cáp
+                    </h3>
+                </div>
+
+                <div class="row row-cols-4" id="bt4-input">
+                    <div class="col">
+                        <select
+                            name=""
+                            id="bt4-selectType"
+                            class="form-control"
+                            onchange="hideOrShow()"
+                        >
+                            <option value="#">Chọn loại khách hàng</option>
+                            <option value="1">Nhà dân</option>
+                            <option value="2">Doanh nghiệp</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <input
+                            id="bt4-customerID"
+                            type="number"
+                            class="form-control"
+                            placeholder="Nhập mã khách hàng"
+                        />
+                    </div>
+
+                    <div class="col">
+                        <input
+                            id="bt4-high-class-channel"
+                            type="number"
+                            class="form-control"
+                            placeholder="Số kênh cao cấp"
+                        />
+                    </div>
+
+                    <div
+                        class="col"
+                        style="display: none"
+                        id="bt4-inputConnection"
+                    >
+                        <input
+                            id="bt4-connection"
+                            type="number"
+                            class="form-control"
+                            placeholder="Số kết nối"
+                        />
+                    </div>
+                </div>
+
+                <div class="row row-cols-2 w-75" style="margin: 0 auto">
+                    <div class="col w-50">
+                        <button id="bt4-btn" class="btn btn-dark w-100">
+                            Kết quả
+                        </button>
+                    </div>
+
+                    <div class="col w-50">
+                        <div
+                            id="bt4-result"
+                            class="alert alert-secondary"
+                        ></div>
+                    </div>
+                </div>
+                <p class="mt-5">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Hic itaque recusandae, nam illo pariatur, sit perferendis
+                    eligendi obcaecati nihil, rerum modi. Itaque non eum eveniet
+                    aspernatur? Molestiae debitis, aliquam iure vero ipsum quasi
+                    sunt quae necessitatibus magnam porro deserunt officia
+                    assumenda at amet cupiditate pariatur eveniet iusto totam
+                    natus distinctio?
+                </p>
+            </div>
+        </div>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- index.js -->
+        <script src="./JS/index.js"></script>
+    </body>
+</html>

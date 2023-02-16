@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bài tập JS buổi 5</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+
+        <!-- googleFont -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- fontAwesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+            integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+            crossorigin="anonymous"
+        />
+
+        <!-- index.css -->
+        <link rel="stylesheet" href="./CSS/index.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1 class="text-center">BÀI TẬP JS BUỔI 5</h1>
+            </div>
+
+            <div class="content d-block rounded-3">
+                <!-- BT1: QUẢN LÝ TUYỂN SINH -->
+                <div>
+                    <h3 class="alert alert-primary fw-bold mb-0">
+                        Bài tập 1: Quản lý tuyển sinh
+                    </h3>
+                    <div class="form-group">
+                        <div class="text-center w-100 mt-2">
+                            <input
+                                id="benchmark"
+                                type="number"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Điểm chuẩn"
+                            />
+
+                            <select
+                                id="area"
+                                type="text"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Chọn khu vực"
+                            >
+                                <option value="#">Chọn khu vực</option>
+                                <option value="0">
+                                    X -- không được ưu tiên
+                                </option>
+                                <option value="2">A</option>
+                                <option value="1">B</option>
+                                <option value="0.5">C</option>
+                            </select>
+
+                            <select
+                                id="object"
+                                type="text"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Chọn đối tượng"
+                            >
+                                <option value="#">Chọn đối tượng</option>
+                                <option value="0">
+                                    0 -- không được ưu tiên
+                                </option>
+                                <option value="2.5">1</option>
+                                <option value="1.5">2</option>
+                                <option value="1">3</option>
+                            </select>
+                        </div>
+
+                        <div class="text-center w-100 mb-2">
+                            <input
+                                id="subject1"
+                                type="number"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Điểm môn thứ 1"
+                            />
+                            <input
+                                id="subject2"
+                                type="number"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Điểm môn thứ 2"
+                            />
+                            <input
+                                id="subject3"
+                                type="number"
+                                class="col-3 m-2 p-2 rounded-2"
+                                placeholder="Điểm môn thứ 3"
+                            />
+                        </div>
+
+                        <div class="form-inline">
+                            <div class="w-100 m-0 d-flex row-flex">
+                                <button
+                                    id="btnResult1"
+                                    class="btn btn-dark col-3 m-2 ms-5"
+                                >
+                                    Kết quả
+                                </button>
+
+                                <div
+                                    class="alert alert-primary col-6 m-2 w-2"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo error tempora maxime reprehenderit perspiciatis
+                    dicta dolores aperiam in debitis placeat odio minus soluta
+                    quam fugit beatae cumque, tempore nostrum repudiandae
+                    veniam. Iusto itaque ipsa tempora laudantium, explicabo
+                    molestias nisi nam ipsam? Placeat quisquam distinctio eos
+                    iusto voluptate veniam ea neque architecto officiis
+                    consectetur inventore dignissimos odio, eveniet fugiat.
+                    Excepturi et quidem ratione nobis explicabo, dicta vitae
+                    velit non in vero voluptate. Accusamus repellendus eos porro
+                    sapiente veniam! Explicabo magni et voluptate nihil sunt
+                    ducimus corporis, accusantium impedit ipsum quaerat, fugit
+                    ipsa praesentium possimus neque fuga corrupti eos ullam.
+                    Nulla eveniet iusto eligendi autem nam, placeat deserunt
+                    natus facere itaque? Iusto aut quidem incidunt labore
+                    inventore pariatur ipsa tempora iure qui. Voluptatum aliquid
+                    molestiae modi, laudantium perspiciatis sit eius laborum
+                    corporis quae adipisci, provident voluptate expedita totam
+                    ullam officiis earum consequatur molestias ea! Soluta est ab
+                    cumque suscipit alias, delectus obcaecati cum nemo
+                    voluptatum ut magnam ducimus quasi possimus culpa fuga
+                    dolorum aspernatur debitis eius, tenetur saepe laudantium
+                    beatae dolorem rem. Accusantium aliquid veritatis harum
+                    corporis a veniam at molestiae? Eligendi distinctio voluptas
+                    quisquam facere incidunt nisi voluptates labore commodi
+                    cumque fugit debitis nulla soluta, voluptatum eius sunt
+                    pariatur doloribus minima.
+                </p>
+
+                <!-- BT2: TÍNH TIỀN ĐIỆN -->
+                <div>
+                    <h3 class="alert alert-primary fw-bold mb-0">
+                        Bài tập 2: Tính tiền điện
+                    </h3>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                    quibusdam obcaecati nihil, ea, officiis itaque accusantium
+                    minima voluptatibus officia perspiciatis consequuntur sed
+                    facilis a dignissimos nemo expedita veniam blanditiis illo
+                    eum veritatis quia! Voluptates quasi voluptatem sunt nulla
+                    repellendus iste! Facilis voluptas modi fugiat aspernatur
+                    nihil nam reiciendis eum libero ipsum enim. Tempore maxime
+                    reprehenderit laboriosam aperiam similique exercitationem
+                    dignissimos, numquam neque atque. Tempore minus dolores
+                    dolorum quasi, quos, quas iusto dicta temporibus magnam
+                    ullam harum iure nemo nesciunt animi expedita! Aperiam alias
+                    laborum dolore quia ut id ullam. Incidunt commodi et dolore
+                    illum temporibus quibusdam accusantium doloremque nisi
+                    aliquam.
+                </p>
+
+                <!-- BT3: TÍNH THUẾ THU NHẬP CÁ NHÂN -->
+                <div>
+                    <h3 class="alert alert-primary fw-bold mb-0">
+                        Bài tập 3: Tính thuế thu nhập cá nhân
+                    </h3>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                    quibusdam obcaecati nihil, ea, officiis itaque accusantium
+                    minima voluptatibus officia perspiciatis consequuntur sed
+                    facilis a dignissimos nemo expedita veniam blanditiis illo
+                    eum veritatis quia! Voluptates quasi voluptatem sunt nulla
+                    repellendus iste! Facilis voluptas modi fugiat aspernatur
+                    nihil nam reiciendis eum libero ipsum enim. Tempore maxime
+                    reprehenderit laboriosam aperiam similique exercitationem
+                    dignissimos, numquam neque atque. Tempore minus dolores
+                    dolorum quasi, quos, quas iusto dicta temporibus magnam
+                    ullam harum iure nemo nesciunt animi expedita! Aperiam alias
+                    laborum dolore quia ut id ullam. Incidunt commodi et dolore
+                    illum temporibus quibusdam accusantium doloremque nisi
+                    aliquam.
+                </p>
+
+                <!-- BT4: TÍNH TIỀN CÁP -->
+                <div>
+                    <h3 class="alert alert-primary fw-bold mb-0">
+                        Bài tập 4: Tính tiền cáp
+                    </h3>
+                </div>
+
+                <p style="padding-bottom: 20px; margin-bottom: 0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                    quibusdam obcaecati nihil, ea, officiis itaque accusantium
+                    minima voluptatibus officia perspiciatis consequuntur sed
+                    facilis a dignissimos nemo expedita veniam blanditiis illo
+                    eum veritatis quia! Voluptates quasi voluptatem sunt nulla
+                    repellendus iste! Facilis voluptas modi fugiat aspernatur
+                    nihil nam reiciendis eum libero ipsum enim. Tempore maxime
+                    reprehenderit laboriosam aperiam similique exercitationem
+                    dignissimos, numquam neque atque. Tempore minus dolores
+                    dolorum quasi, quos, quas iusto dicta temporibus magnam
+                    ullam harum iure nemo nesciunt animi expedita! Aperiam alias
+                    laborum dolore quia ut id ullam. Incidunt commodi et dolore
+                    illum temporibus quibusdam accusantium doloremque nisi
+                    aliquam.
+                </p>
+            </div>
+        </div>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

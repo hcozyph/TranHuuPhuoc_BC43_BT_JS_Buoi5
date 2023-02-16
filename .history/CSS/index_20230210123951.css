@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* style="
+background-image: url(./img/2.jpg);
+background-size: 100%;
+background-attachment: fixed;
+" */
+
+.title h1 {
+    /* width: 100vw; */
+    color: rgb(72 0 51);
+    font-size: 48px;
+    /* position: relative; */
+}
+
+/* .title h1::after {
+    content: "";
+    width: 100%;
+    top: 3px;
+    bottom: 0;
+    color: rgb(159 88 115);
+    z-index: -1;
+} */
