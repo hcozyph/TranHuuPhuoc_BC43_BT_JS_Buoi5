@@ -48,16 +48,53 @@ body {
     margin: 0 60px;
 }
 
-#bt1-result {
-    width: 207%;
+@media only screen and (max-width: 769px) {
+    .title h1 {
+        background-size: 200%;
+        font-size: 46px;
+        background-position: center top;
+    }
+
+    .content {
+        margin: 0 20px;
+    }
+
+    #bt3-income::placeholder {
+        font-size: 15px;
+    }
+    #bt3-unit {
+        font-size: 13px;
+    }
 }
 
-#bt3-result {
-    width: 207%;
-}
+@media only screen and (max-width: 577px) {
+    .title h1 {
+        background-size: 300%;
+        background-position: center top;
+        font-size: 36px;
+    }
 
-#bt4-result {
-    width: 207%;
+    .content {
+        margin: 0 8px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .col {
+        margin-bottom: 20px;
+    }
+
+    #subject1,
+    #subject2,
+    #subject3 {
+        font-size: 12px;
+    }
+
+    #bt1-btn {
+        width: 20px;
+    }
 }
 
 .alert-primary {
@@ -90,75 +127,4 @@ select:hover::placeholder {
 input:focus,
 select:focus {
     color: rgb(65, 38, 38);
-}
-
-/* RESPONSIVE*/
-@media only screen and (max-width: 769px) {
-    .title h1 {
-        background-size: 200%;
-        font-size: 46px;
-        background-position: center top;
-    }
-
-    .content {
-        margin: 0 20px;
-    }
-
-    #bt1-result {
-        width: 212%;
-    }
-
-    #bt3-income::placeholder {
-        font-size: 15px;
-    }
-
-    #bt3-unit {
-        font-size: 13px;
-    }
-
-    #bt3-result {
-        width: 210%;
-    }
-
-    #bt4-result {
-        width: 210%;
-    }
-}
-
-@media only screen and (max-width: 577px) {
-    .title h1 {
-        background-size: 300%;
-        background-position: center top;
-        font-size: 36px;
-    }
-
-    .content {
-        margin: 0 8px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    .col {
-        margin-bottom: 20px;
-    }
-
-    #subject1,
-    #subject2,
-    #subject3 {
-        font-size: 12px;
-    }
-
-    #bt1-result {
-        width: 100%;
-    }
-
-    #bt3-result {
-        width: 100%;
-    }
-
-    #bt4-result {
-        width: 100%;
-    }
 }

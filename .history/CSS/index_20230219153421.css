@@ -60,39 +60,6 @@ body {
     width: 207%;
 }
 
-.alert-primary {
-    background-color: #000000ab;
-    border: none;
-    color: #ff419b;
-}
-
-h3 {
-    font-family: "Fraunces", serif;
-    font-weight: 100;
-    text-align: center;
-}
-input,
-select {
-    border: transparent;
-    height: 45px;
-}
-
-input:hover,
-select:hover {
-    background-color: #e2a9ff85;
-}
-
-input:hover::placeholder,
-select:hover::placeholder {
-    color: #4b0a3f;
-}
-
-input:focus,
-select:focus {
-    color: rgb(65, 38, 38);
-}
-
-/* RESPONSIVE*/
 @media only screen and (max-width: 769px) {
     .title h1 {
         background-size: 200%;
@@ -161,4 +128,36 @@ select:focus {
     #bt4-result {
         width: 100%;
     }
+}
+
+.alert-primary {
+    background-color: #000000ab;
+    border: none;
+    color: #ff419b;
+}
+
+h3 {
+    font-family: "Fraunces", serif;
+    font-weight: 100;
+    text-align: center;
+}
+input,
+select {
+    border: transparent;
+    height: 45px;
+}
+
+input:hover,
+select:hover {
+    background-color: #e2a9ff85;
+}
+
+input:hover::placeholder,
+select:hover::placeholder {
+    color: #4b0a3f;
+}
+
+input:focus,
+select:focus {
+    color: rgb(65, 38, 38);
 }

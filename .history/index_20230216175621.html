@@ -43,16 +43,16 @@
                 <h1 class="text-center">BÀI TẬP JS BUỔI 5</h1>
             </div>
 
-            <div class="content d-block rounded-3 pb-2">
+            <div class="content d-block rounded-3">
                 <!--BT1: QUẢN LÝ TUYỂN SINH -->
                 <div class="bt1 item">
                     <h3 class="alert alert-primary fw-bold mb-0">
                         Bài tập 1: Quản lý tuyển sinh
                     </h3>
 
-                    <div class="bt1-content my-xl-5 my-md-5 my-4 mx-4">
+                    <div class="my-4 mx-4">
                         <div
-                            class="row row-cols-xl-3 row-cols-md-3 row-cols-1 w-xl-75 w-md-100 mb-xl-4 mb-md-4 mb-0"
+                            class="row row-cols-3 mb-4 w-75"
                             style="margin: 0 auto"
                         >
                             <div class="col">
@@ -104,7 +104,7 @@
                         </div>
 
                         <div
-                            class="row row-cols-xl-3 row-cols-md-3 row-cols-2 mb-xl-4 mb-md-4 mb-0 w-xl-75 w-md-100"
+                            class="row row-cols-3 mb-4 w-75"
                             style="margin: 0 auto"
                         >
                             <div class="col">
@@ -135,10 +135,7 @@
                             </div>
                         </div>
 
-                        <div
-                            class="row row-cols-xl-3 row-cols-md-3 row-cols-1 w-xl-75 w-md-100"
-                            style="margin: 0 auto"
-                        >
+                        <div class="row row-cols-3 w-75" style="margin: 0 auto">
                             <div class="col">
                                 <button
                                     id="bt1-btn"
@@ -153,7 +150,7 @@
                                 <div
                                     id="bt1-result"
                                     class="alert alert-secondary p-2 mb-0"
-                                    style="min-height: 45px"
+                                    style="min-height: 45px; width: 210%"
                                 ></div>
                             </div>
                         </div>
@@ -167,9 +164,9 @@
                         Bài tập 2: Tính tiền điện
                     </h3>
 
-                    <div class="my-xl-5 my-md-5 my-4">
+                    <div class="my-4">
                         <div
-                            class="row row-cols-xl-2 row-cols-md-2 row-cols-1 w-75 mb-xl-4 mb-md-4 mb-0"
+                            class="row row-cols-2 w-50 mb-4"
                             style="margin: auto"
                         >
                             <div class="col">
@@ -191,10 +188,7 @@
                             </div>
                         </div>
 
-                        <div
-                            class="row row-cols-xl-2 row-cols-md-2 row-cols-1 w-75"
-                            style="margin: 0 auto"
-                        >
+                        <div class="row row-cols-2 w-50" style="margin: 0 auto">
                             <div class="col">
                                 <button
                                     id="bt2-btn"
@@ -223,11 +217,8 @@
                         Bài tập 3: Tính thuế thu nhập cá nhân
                     </h3>
 
-                    <div class="my-xl-5 my-md-5 my-4 mx-xl-5 mx-md-2">
-                        <div
-                            class="row row-cols-xl-3 row-cols-md-3 row-cols-1 w-xl-75 w-md-100 mb-xl-4 mb-md-4 mb-0"
-                            style="margin: 0 auto"
-                        >
+                    <div class="my-4">
+                        <div class="row row-cols-3 w-75" style="margin: 0 auto">
                             <div class="col">
                                 <input
                                     id="bt3-name"
@@ -276,24 +267,26 @@
                             </div>
                         </div>
 
-                        <div
-                            class="row row-cols-xl-3 row-cols-md-3 row-cols-1 w-xl-75 w-md-75 w-100"
-                            style="margin: 0 auto"
-                        >
-                            <div class="col">
+                        <div class="row row-cols-2 w-75" style="margin: 0 auto">
+                            <div class="col position-relative w-50">
                                 <button
                                     id="bt3-btn"
-                                    class="btn btn-dark w-100"
-                                    style="min-height: 45px"
+                                    class="btn btn-dark w-100 m-0 me-2 position-absolute"
+                                    style="
+                                        min-height: 45px;
+                                        max-width: 260px;
+                                        top: 0;
+                                        right: 0%;
+                                    "
                                 >
                                     Kết quả
                                 </button>
                             </div>
 
-                            <div class="col">
+                            <div class="col w-50">
                                 <div
                                     id="bt3-result"
-                                    class="alert alert-secondary w-sm-100"
+                                    class="alert alert-secondary w-75 ms-2 mb-0"
                                     style="min-height: 45px"
                                 ></div>
                             </div>
@@ -308,81 +301,81 @@
                         Bài tập 4: Tính tiền cáp
                     </h3>
 
-                    <div class="my-xl-5 my-md-5 my-4 mx-xl-5 mx-md-2 mb-2">
-                        <div
-                            class="row row-cols-xl-3 row-cols-md-3 row-cols-1 w-xl-75 w-md-100 mb-xl-4 mb-sm-4 mb-0"
-                            id="bt4-input"
-                            style="margin: 0 auto"
-                        >
-                            <div class="col">
-                                <select
-                                    name="selectType"
-                                    type="text"
-                                    id="bt4-selectType"
-                                    class="form-control"
-                                    onchange="hideOrShow()"
-                                >
-                                    <option value="#">
-                                        Chọn loại khách hàng
-                                    </option>
-                                    <option value="1">Nhà dân</option>
-                                    <option value="2">Doanh nghiệp</option>
-                                </select>
-                            </div>
-
-                            <div class="col">
-                                <input
-                                    id="bt4-customerID"
-                                    type="number"
-                                    class="form-control"
-                                    placeholder="Nhập mã khách hàng"
-                                />
-                            </div>
-
-                            <div class="col">
-                                <input
-                                    id="bt4-highClassChannel"
-                                    type="number"
-                                    class="form-control"
-                                    placeholder="Số kênh cao cấp"
-                                />
-                            </div>
-
-                            <div
-                                class="col"
-                                id="bt4-typeOfCustomer"
-                                style="display: none"
+                    <div
+                        class="row w-100 mt-4"
+                        id="bt4-input"
+                        style="margin: 0 auto"
+                    >
+                        <div class="col">
+                            <select
+                                name=""
+                                id="bt4-selectType"
+                                class="form-control"
+                                onchange="hideOrShow()"
                             >
-                                <input
-                                    id="bt4-numberOfConnection"
-                                    type="number"
-                                    class="form-control"
-                                    placeholder="Số kết nối"
-                                />
-                            </div>
+                                <option value="0">Chọn loại khách hàng</option>
+                                <option value="1">Nhà dân</option>
+                                <option value="2">Doanh nghiệp</option>
+                            </select>
+                        </div>
+
+                        <div class="col">
+                            <input
+                                id="bt4-customerID"
+                                type="number"
+                                class="form-control"
+                                placeholder="Nhập mã khách hàng"
+                            />
+                        </div>
+
+                        <div class="col">
+                            <input
+                                id="bt4-highClassChannel"
+                                type="number"
+                                class="form-control"
+                                placeholder="Số kênh cao cấp"
+                            />
                         </div>
 
                         <div
-                            class="row row-cols-xl-3 row-cols-md-3 row-cols-1 w-xl-75 w-md-100"
-                            style="margin: 0 auto"
+                            class="col"
+                            id="bt4-typeOfCustomer"
+                            style="display: none"
                         >
-                            <div class="col">
-                                <button
-                                    id="bt4-btn"
-                                    class="btn btn-dark w-100"
-                                    style="min-height: 45px"
-                                >
-                                    Kết quả
-                                </button>
-                            </div>
+                            <input
+                                id="bt4-numberOfConnection"
+                                type="number"
+                                class="form-control"
+                                placeholder="Số kết nối"
+                            />
+                        </div>
+                    </div>
 
-                            <div class="col">
-                                <div
-                                    id="bt4-result"
-                                    class="alert alert-secondary"
-                                    style="min-height: 45px"
-                                ></div>
-                            </div>
+                    <div class="row w-100 mt-4" style="margin: 0 auto">
+                        <div
+                            class="col ms-2 me-2"
+                            style="position: relative; max-width: 25%"
+                        >
+                            <button
+                                id="bt4-btn"
+                                class="btn btn-dark w-75"
+                                style="
+                                    min-height: 45px;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                "
+                            >
+                                Kết quả
+                            </button>
+                        </div>
+
+                        <div class="col" style="max-width: 50%">
+                            <div
+                                id="bt4-result"
+                                class="alert alert-secondary w-100 mb-5"
+                                style="min-height: 45px"
+                            ></div>
                         </div>
                     </div>
                 </div>

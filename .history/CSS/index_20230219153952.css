@@ -162,3 +162,9 @@ select:focus {
         width: 100%;
     }
 }
+
+@media only sceen and (min-width: 578px) and (max-width: 767px) {
+    .col {
+        margin-bottom: 20px;
+    }
+}
