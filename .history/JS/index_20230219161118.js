@@ -104,22 +104,22 @@ document.getElementById('bt3-btn').onclick = function() {
     if (taxableIncome <= 60e+6) {
         result = taxableIncome * 0.05;
     } 
-    else if (taxableIncome > 60e+6 && taxableIncome <= 120e+6) {
+    else if (taxableIncome > 60 && taxableIncome <= 120) {
         result = taxableIncome * 0.1;
     }
-    else if (taxableIncome > 120e+6 && taxableIncome <= 210e+6) {
+    else if (taxableIncome > 120 && taxableIncome <= 210) {
         result = taxableIncome * 0.15;
     }
-    else if (taxableIncome > 210e+6 && taxableIncome <= 384e+6) {
+    else if (taxableIncome > 210 && taxableIncome <= 384) {
         result = taxableIncome * 0.2;
     }
-    else if (taxableIncome > 384e+6 && taxableIncome <= 624e+6) {
+    else if (taxableIncome > 384 && taxableIncome <= 624) {
         result = taxableIncome * 0.25;
     }
-    else if (taxableIncome > 624e+6 && taxableIncome <= 960e+6) {
+    else if (taxableIncome > 624 && taxableIncome <= 960) {
         result = taxableIncome * 0.3;
     }
-    else if (taxableIncome > 960e+6) {
+    else if (taxableIncome > 960) {
         result = taxableIncome * 0.35;
     }
 
@@ -196,11 +196,11 @@ document.getElementById('bt4-btn').onclick = function () {
     //print-result
     document.getElementById('bt4-result').innerHTML = 'Mã khách hàng: ' + customerID + '. Tiền cáp là: $' + result.toLocaleString();  
 }
+
 /* End-Bài tập 4: Tính tiền cáp*/
 
-/* LINK VERCEL
-https://tran-huu-phuoc-bc-43-bt-js-buoi5.vercel.app/
-*/
+
+
 
 
 

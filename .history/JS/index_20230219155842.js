@@ -97,30 +97,28 @@ document.getElementById('bt3-btn').onclick = function() {
 
     //process
     income = income * unit;
-    var taxableIncome = 0;
-    taxableIncome = income - (4e+6) - (people * (1.6e+6));
+    result = income - (4e+6) - (people * (1.6e+6));
 
-    
-    if (taxableIncome <= 60e+6) {
-        result = taxableIncome * 0.05;
+    if (income <= 60e+6) {
+        result = result * 0.05;
     } 
-    else if (taxableIncome > 60e+6 && taxableIncome <= 120e+6) {
-        result = taxableIncome * 0.1;
+    else if (income > 60 && income <= 120) {
+        result = result * 0.1;
     }
-    else if (taxableIncome > 120e+6 && taxableIncome <= 210e+6) {
-        result = taxableIncome * 0.15;
+    else if (income > 120 && income <= 210) {
+        result = result * 0.15;
     }
-    else if (taxableIncome > 210e+6 && taxableIncome <= 384e+6) {
-        result = taxableIncome * 0.2;
+    else if (income > 210 && income <= 384) {
+        result = result * 0.2;
     }
-    else if (taxableIncome > 384e+6 && taxableIncome <= 624e+6) {
-        result = taxableIncome * 0.25;
+    else if (income > 384 && income <= 624) {
+        result = result * 0.25;
     }
-    else if (taxableIncome > 624e+6 && taxableIncome <= 960e+6) {
-        result = taxableIncome * 0.3;
+    else if (income > 624 && income <= 960) {
+        result = result * 0.3;
     }
-    else if (taxableIncome > 960e+6) {
-        result = taxableIncome * 0.35;
+    else if (income > 960) {
+        result = result * 0.35;
     }
 
     document.getElementById('bt3-result').innerHTML = 'Thuế TNCN của ' + name + ' là ' + result.toLocaleString() + 'VND.';
@@ -196,11 +194,11 @@ document.getElementById('bt4-btn').onclick = function () {
     //print-result
     document.getElementById('bt4-result').innerHTML = 'Mã khách hàng: ' + customerID + '. Tiền cáp là: $' + result.toLocaleString();  
 }
+
 /* End-Bài tập 4: Tính tiền cáp*/
 
-/* LINK VERCEL
-https://tran-huu-phuoc-bc-43-bt-js-buoi5.vercel.app/
-*/
+
+
 
 
 

@@ -196,11 +196,11 @@ document.getElementById('bt4-btn').onclick = function () {
     //print-result
     document.getElementById('bt4-result').innerHTML = 'Mã khách hàng: ' + customerID + '. Tiền cáp là: $' + result.toLocaleString();  
 }
+
 /* End-Bài tập 4: Tính tiền cáp*/
 
-/* LINK VERCEL
-https://tran-huu-phuoc-bc-43-bt-js-buoi5.vercel.app/
-*/
+
+
 
 
 
