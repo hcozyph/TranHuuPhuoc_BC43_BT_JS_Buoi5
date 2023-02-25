@@ -114,31 +114,13 @@ document.getElementById('bt3-btn').onclick = function () {
         result = (60e+6) * 0.05 + (60e+6) * 0.1 + (90e+6) * 0.15 + (taxableIncome - (210e+6)) * 0.2;
     }
     else if (taxableIncome > 384e+6 && taxableIncome <= 624e+6) {
-        result =
-            (60e+6) * 0.05 +
-            (60e+6) * 0.1 +
-            (90e+6) * 0.15 +
-            (174e+6) * 0.2 +
-            (taxableIncome - (384e+6)) * 0.25;
+        result = (60e+6) * 0.05 + (60e+6) * 0.1 + (90e+6) * 0.15 + (174e+6) * 0.2 + (taxableIncome - (384e+6)) * 0.25;
     }
     else if (taxableIncome > 624e+6 && taxableIncome <= 960e+6) {
-        result =
-            (60e+6) * 0.05 +
-            (60e+6) * 0.1 +
-            (90e+6) * 0.15 +
-            (174e+6) * 0.2 +
-            (240e+6) * 0.25 +
-            (taxableIncome - (624e+6)) * 0.3;
+        result = taxableIncome * 0.3;
     }
     else if (taxableIncome > 960e+6) {
-        result =
-            (60e+6) * 0.05 +
-            (60e+6) * 0.1 +
-            (90e+6) * 0.15 +
-            (174e+6) * 0.2 +
-            (240e+6) * 0.25 +
-            (336e+6) * 0.3 +
-            (taxableIncome - (960e+6)) * 0.35;
+        result = taxableIncome * 0.35;
     }
 
     document.getElementById('bt3-result').innerHTML = 'Thuế TNCN của ' + name + ' là ' + result.toLocaleString() + 'VND.';
